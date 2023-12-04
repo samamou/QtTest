@@ -1,0 +1,7 @@
+{
+    "files": [
+        "README.md",
+        "../scripts/main.py",
+        "simpleUI.qml"
+    ]
+}
