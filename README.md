@@ -26,5 +26,4 @@ Objective: Create a Qt/QMP User Interface for LivePose to generate JSON config f
 
 Review https://www.qt.io/product/qt6/qml-book/ch04-qmlstart-core-elements
 
-Install QSSEditor for layout design in vscode?
-
+Install QSSEditor for layout design in vscode or use their designer
