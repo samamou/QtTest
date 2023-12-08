@@ -1,6 +1,7 @@
 //Simple UI
 //create text inputs, dropdows, sliders, to capture user input (Quick Controls)
 //group related config parameters together
+//TODO: Validate User Input? make sure config data isn't empty
 
 import QtQuick
 import QtQuick.Window
@@ -12,7 +13,6 @@ import QtQuick.Layouts // Import for layouts
 ApplicationWindow {
     // signal configDataChanged(string name, real slide)
     signal saveConfig(string name, real slide, string config_json)
-
 
     width: 640
     height: 480
@@ -67,18 +67,18 @@ ApplicationWindow {
 
 
         Button {
-            text: "Save" 
-            onClicked: {
+            text: "Save"
 
-                // Collect all the data from the UI elements
-                var configData = {
-                    "backend": backendSelector.currentText
-                    
-                };
-                
-                saveConfig(name.text, slider.value*10, JSON.stringify(configData));
+                onClicked: {
+                    // Collect all the data from the UI elements
+                    var configData = {
+                        "backend": backendSelector.currentText
+                        
+                    };
+                    //bind the Save button to the saveConfig signal 
+                    saveConfig(name.text, slider.value*10, JSON.stringify(configData));
+
             }
-
             
         }
 

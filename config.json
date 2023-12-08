@@ -1,7 +1,7 @@
 {
-    "name": "djshfksdj",
-    "slide": 2.5783482142857146,
+    "name": "sarah",
+    "slide": 0.0,
     "name ": {
-        "backend": "mediapipe"
+        "backend": "trt"
     }
 }
